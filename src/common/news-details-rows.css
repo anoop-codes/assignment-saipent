@@ -1,0 +1,11 @@
+.title {
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+
+small span{
+    padding: 0 5px;
+}

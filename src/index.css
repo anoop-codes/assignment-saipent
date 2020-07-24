@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+table thead th, table th , table td {
+  vertical-align: bottom;
+  border-bottom: none ! important;
+  border-top: none ! important;
+  padding:5px 25px ! important;
+  font-size: 14px ! important;
+  text-align: center;
+  position: relative;
+}
+
+table tr th {
+    border: none;
+    background-color: #fff3ed;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+table thead th:first-child {
+  border-radius: 10px 0 0 10px;
+  padding-left: 25px;
+
+}
+
+table thead th:last-child {
+  border-radius: 0 10px 10px 0;
+  text-align: left;
+  width: 70%;
+}
+
+table tbody td:last-child {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+tr td {
+    font-size: 15px;
+    color: #000000;
+    line-height: 1.4;
+}
+
+
+
+.fa {
+  padding: 5px;
+  color: #ff1010;
+  cursor: pointer;
+}
+
+.footer {
+  float: right;
+}
+
+.footer button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.footer button:last-child {
+    border-left: 1px solid red;
+    line-height: 10px;
+}
