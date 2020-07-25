@@ -56,6 +56,7 @@ export function getNewsData(page) {
         dispatch(sendNewsRequest())
         axios.get(`${httpApi['base-api']}?page=${page}`).then((response) => {
             const { data } = response;
+            data['hits'].map((value) => value.points = Math.floor(Math.random() * 10));
             dispatch(successNewsRequest(data['hits']));
         }).catch(error => {
             dispatch(failedNewsRequest(error.message));

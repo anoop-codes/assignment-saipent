@@ -44,7 +44,7 @@ const InfoTable = ({ newData }) => {
                 </table>
             </div >
             <div className="table-responsive p-3">
-                <LineChart data={newData} />
+                {newData.length > 0 && <LineChart data={newData} />}
             </div>
         </Fragment >
     );
