@@ -24,7 +24,7 @@ class Axis extends React.Component {
         let axis;
 
         if (orient === "bottom") {
-            axis = axisBottom(scale);
+            axis = axisBottom(scale).ticks(ticks);
         }
         if (orient === "left") {
             axis = axisLeft(scale)
@@ -39,6 +39,10 @@ class Axis extends React.Component {
 
         if (orient === "left") {
             const axis = axisLeft(scale).ticks(ticks);
+            selectAll(`.${orient}`).transition(t).call(axis)
+        }
+        if (orient === "bottom") {
+            const axis = axisBottom(scale).ticks(ticks);
             selectAll(`.${orient}`).transition(t).call(axis)
         }
     }
